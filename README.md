@@ -6,13 +6,17 @@ PHP-based Simple Math Captcha
 Usage
 =====
 
-1. Include the file. (Note: session_start() must be called before instantiating this class)
+1. Include the file. (Note: `session_start()` must be called before instantiating this class)
 
-  `require_once 'MathCaptcha';`
+  ```php
+  require_once 'MathCaptcha';
+  ```
 
 2. Instantiate
 
-  `$cpa = new MathCaptcha();`
+  ```php
+  $cpa = new MathCaptcha();
+  ```
 
 3. First call to the page (before user submit)
 
@@ -33,4 +37,6 @@ Usage
 
 4. Captcha text within a form
 
-  `echo 'Solve this simple Math: ' . $cpa->get_captcha_text() . " = ?";`
+  ```php
+  echo 'Solve this simple Math: ' . $cpa->get_captcha_text() . " = ?";
+  ```
