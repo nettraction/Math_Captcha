@@ -9,10 +9,10 @@ Usage
 1. Include the file. (Note: `session_start()` must be called before instantiating this class)
 
   ```php
-  require_once 'MathCaptcha';
+  require_once 'MathCaptcha.php';
   ```
 
-2. Instantiate
+2. Instantiate MathCaptcha 
 
   ```php
   $cpa = new MathCaptcha();
