@@ -71,7 +71,11 @@ Class MathCaptcha{
     }
   }
   
-  public function get_captcha_text(){
-    return sprintf("%d %s %d", $this->operand1, $this->operator, $this->operand2);
+  public function get_captcha_text($format='%d %s %d'){
+    if(!empty($format)){
+      return sprintf($format, $this->operand1, $this->operator, $this->operand2);
+    }else{
+      return sprintf("%d %s %d", $this->operand1, $this->operator, $this->operand2);
+    }
   }
 }
