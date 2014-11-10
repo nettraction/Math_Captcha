@@ -35,7 +35,7 @@ Usage
   }
   ```
 
-4. Captcha text within a form
+4. Display Captcha/Challenge text within a form (using `get_captcha_text()` method)
 
   ```php
   echo 'Solve this simple Math: ' . $cpa->get_captcha_text() . " = ?";
