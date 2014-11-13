@@ -3,6 +3,7 @@ Math_Captcha
 
 PHP-based Simple Math Captcha
 
+
 Usage
 =====
 
@@ -42,7 +43,7 @@ Usage
   echo 'Solve this simple Math: ' . $cpa->get_captcha_text() . " = ?";
   ```
   
-  __Custom Text__
+  __Rich Text__
   ```php
   $captcha_text = 'Result of <i>{operand1}</i> {operator} <i>{operand2}</i> is?';
   echo $cpa->get_captcha_text($captcha_text);
