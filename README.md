@@ -37,6 +37,13 @@ Usage
 
 4. Display Captcha/Challenge text within a form (using `get_captcha_text()` method)
 
+  *Simple*
   ```php
   echo 'Solve this simple Math: ' . $cpa->get_captcha_text() . " = ?";
+  ```
+  
+  *Custom Text*
+  ```php
+  $captcha_text = 'Result of <i>{operand1}</i> {operator} <i>{operand2}</i> is?';
+  echo $cpa->get_captcha_text($captcha_text);
   ```
