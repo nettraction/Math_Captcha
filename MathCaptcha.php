@@ -98,4 +98,11 @@ Class MathCaptcha {
     }
   }
 
+  /**
+   * Makes it sums only!
+   */
+  public function sums_only_please(){
+    $this->op_symbols = array('+');
+  }
+  
 }
